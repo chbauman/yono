@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>YONO Streetband 2023</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description></description>
+	<lastBuildDate>Sun, 04 Jun 2023 08:52:54 +0000</lastBuildDate>
+	<language>de-CH</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2.2</generator>
+	<item>
+		<title>Erster Auftritt</title>
+		<link>/2023/06/04/hallo-welt/</link>
+					<comments>/2023/06/04/hallo-welt/#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sun, 04 Jun 2023 08:44:30 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<guid isPermaLink="false">/?p=1</guid>
+
+					<description><![CDATA[Am 3. Juni 2023 hatte die YONO Streetband ihren ersten Auftritt.]]></description>
+										<content:encoded><![CDATA[
+<p>Am 3. Juni 2023 hatte die YONO Streetband ihren ersten Auftritt. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2023/06/04/hallo-welt/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
