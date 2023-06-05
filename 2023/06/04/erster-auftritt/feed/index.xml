@@ -11,29 +11,11 @@
 	<atom:link href="/2023/06/04/erster-auftritt/feed/" rel="self" type="application/rss+xml" />
 	<link>/2023/06/04/erster-auftritt/</link>
 	<description></description>
-	<lastBuildDate>Mon, 05 Jun 2023 17:46:43 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 05 Jun 2023 19:12:00 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.2.2</generator>
-	<item>
-		<title>
-		Von: Ein WordPress-Kommentator		</title>
-		<link>/2023/06/04/erster-auftritt/#comment-1</link>
-
-		<dc:creator><![CDATA[Ein WordPress-Kommentator]]></dc:creator>
-		<pubDate>Sun, 04 Jun 2023 08:44:30 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1#comment-1</guid>
-
-					<description><![CDATA[Hallo, dies ist ein Kommentar.
-Um mit dem Freischalten, Bearbeiten und Löschen von Kommentaren zu beginnen, besuchen Sie bitte die Kommentare-Ansicht im Dashboard.
-Die Avatare der Kommentatoren kommen von &lt;a href=&quot;https://de.gravatar.com/&quot;&gt;Gravatar&lt;/a&gt;.]]></description>
-			<content:encoded><![CDATA[<p>Hallo, dies ist ein Kommentar.<br />
-Um mit dem Freischalten, Bearbeiten und Löschen von Kommentaren zu beginnen, besuchen Sie bitte die Kommentare-Ansicht im Dashboard.<br />
-Die Avatare der Kommentatoren kommen von <a href="https://de.gravatar.com/">Gravatar</a>.</p>
-]]></content:encoded>
-		
-			</item>
-	</channel>
+</channel>
 </rss>
