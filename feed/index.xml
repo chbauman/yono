@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>YONO Streetband 2023</title>
+	<title>YONO Streetband</title>
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description></description>
-	<lastBuildDate>Sun, 04 Jun 2023 08:52:54 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 05 Jun 2023 17:46:43 +0000</lastBuildDate>
 	<language>de-CH</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,20 +21,24 @@
 	<generator>https://wordpress.org/?v=6.2.2</generator>
 	<item>
 		<title>Erster Auftritt</title>
-		<link>/2023/06/04/hallo-welt/</link>
-					<comments>/2023/06/04/hallo-welt/#comments</comments>
+		<link>/2023/06/04/erster-auftritt/</link>
+					<comments>/2023/06/04/erster-auftritt/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Sun, 04 Jun 2023 08:44:30 +0000</pubDate>
 				<category><![CDATA[Allgemein]]></category>
 		<guid isPermaLink="false">/?p=1</guid>
 
-					<description><![CDATA[Am 3. Juni 2023 hatte die YONO Streetband ihren ersten Auftritt.]]></description>
+					<description><![CDATA[Am 3. Juni 2023 hatte die YONO Streetband ihren ersten Auftritt. Der erste Auftritt fand am Morgen beim Flohmarkt im Mosergarten der Stadt Schaffhausen statt. Nach einer gemütlichen Mittagspause am Rhein ging es weiter nach Hallau, wo gleich der nächste Auftritt statt fand, nämlich am Openair Hallau. Dort spielte die YONO Streetband jeweils zwischen den [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>Am 3. Juni 2023 hatte die YONO Streetband ihren ersten Auftritt. </p>
+
+
+
+<p>Der erste Auftritt fand am Morgen beim Flohmarkt im Mosergarten der Stadt Schaffhausen statt. Nach einer gemütlichen Mittagspause am Rhein ging es weiter nach Hallau, wo gleich der nächste Auftritt statt fand, nämlich am Openair Hallau. Dort spielte die YONO Streetband jeweils zwischen den Bands, während die Bühne umgebaut wurde. </p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2023/06/04/hallo-welt/feed/</wfw:commentRss>
+					<wfw:commentRss>/2023/06/04/erster-auftritt/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
