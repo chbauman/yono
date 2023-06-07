@@ -376,7 +376,7 @@
 						</xsl:choose>
 					</xsl:otherwise>
 				</xsl:choose>
-				and was generated on 5. Juni 2023 at 22:34			</p>
+				and was generated on 7. Juni 2023 at 18:30			</p>
 		</xsl:if>
 	</div>
 </xsl:template>
