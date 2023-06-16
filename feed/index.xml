@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Strassenmusik aus Zürich</description>
-	<lastBuildDate>Wed, 07 Jun 2023 17:25:28 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 16 Jun 2023 08:07:26 +0000</lastBuildDate>
 	<language>de-CH</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,35 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Strassenmusik ZH 15.06.2023</title>
+		<link>/2023/06/16/strassenmusik-zh-15-06-2023/</link>
+					<comments>/2023/06/16/strassenmusik-zh-15-06-2023/#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 16 Jun 2023 08:04:33 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<guid isPermaLink="false">/?p=147</guid>
+
+					<description><![CDATA[<p>Am Donnerstag, dem 15.06.2023 machte die YONO Streetband Strassenmusik am Zürisee beim Bellevue. Um 19:00 trafen die Musiker ein und gaben dann ihr komplettes Repertoire zum besten.</p>
+<p>The post <a href="/2023/06/16/strassenmusik-zh-15-06-2023/">Strassenmusik ZH 15.06.2023</a> first appeared on <a href="">YONO Streetband</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>Am Donnerstag, dem 15.06.2023 machte die YONO Streetband Strassenmusik am Zürisee beim Bellevue. Um 19:00 trafen die Musiker ein und gaben dann ihr komplettes Repertoire zum besten.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-5">
+<div class="wp-block-column is-layout-flow"></div>
+
+
+
+<div class="wp-block-column is-layout-flow"></div>
+</div><p>The post <a href="/2023/06/16/strassenmusik-zh-15-06-2023/">Strassenmusik ZH 15.06.2023</a> first appeared on <a href="">YONO Streetband</a>.</p>]]></content:encoded>
+					
+					<wfw:commentRss>/2023/06/16/strassenmusik-zh-15-06-2023/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Erster Auftritt</title>
 		<link>/2023/06/04/erster-auftritt/</link>
 					<comments>/2023/06/04/erster-auftritt/#respond</comments>
