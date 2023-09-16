@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.2.2</generator>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
 
 <image>
 	<url>/wp-content/uploads/2023/06/cropped-Y-32x32.png</url>
@@ -43,7 +43,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="506" src="/wp-content/uploads/2023/06/Col-1024x506.png" alt="YONO Streetband beim musizieren" class="wp-image-169" srcset="/wp-content/uploads/2023/06/Col-1024x506.png 1024w, /wp-content/uploads/2023/06/Col-300x148.png 300w, /wp-content/uploads/2023/06/Col-768x380.png 768w, /wp-content/uploads/2023/06/Col-1536x759.png 1536w, /wp-content/uploads/2023/06/Col.png 1600w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" fetchpriority="high" width="1024" height="506" src="/wp-content/uploads/2023/06/Col-1024x506.png" alt="YONO Streetband beim musizieren" class="wp-image-169" srcset="/wp-content/uploads/2023/06/Col-1024x506.png 1024w, /wp-content/uploads/2023/06/Col-300x148.png 300w, /wp-content/uploads/2023/06/Col-768x380.png 768w, /wp-content/uploads/2023/06/Col-1536x759.png 1536w, /wp-content/uploads/2023/06/Col.png 1600w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -89,7 +89,7 @@
 
 
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe title="YONO Streetband @Openair Hallau" width="500" height="281" src="https://www.youtube.com/embed/A-4BwjOta3E?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe loading="lazy" title="YONO Streetband @Openair Hallau" width="500" height="281" src="https://www.youtube.com/embed/A-4BwjOta3E?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div></figure><p>The post <a href="/2023/06/04/erster-auftritt/">Erster Auftritt</a> first appeared on <a href="">YONO Streetband</a>.</p>]]></content:encoded>
 					
 					<wfw:commentRss>/2023/06/04/erster-auftritt/feed/</wfw:commentRss>
