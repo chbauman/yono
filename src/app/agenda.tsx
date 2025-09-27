@@ -22,7 +22,7 @@ export function parseMarkdownLinks(text: string) {
   let match;
 
   while ((match = regex.exec(text)) !== null) {
-    const [_, linkText, url] = match;
+    const [, linkText, url] = match;
 
     // Push the text before the link
     if (match.index > lastIndex) {

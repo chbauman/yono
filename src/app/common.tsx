@@ -1,9 +1,15 @@
-export function VideoEmbed(props: Readonly<{ youtubeId: string }>) {
+export function VideoEmbed(
+  props: Readonly<{ youtubeId: string; time?: number }>
+) {
+  let link = `https://www.youtube.com/embed/${props.youtubeId}`;
+  if (props.time !== undefined) {
+    link = `${link}?start=${props.time}`;
+  }
   return (
     <div className="w-full max-w-5xl mx-auto my-8 aspect-video">
       <iframe
         className="w-full h-full rounded-xl shadow-lg"
-        src={`https://www.youtube.com/embed/${props.youtubeId}`}
+        src={link}
         title="YouTube video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
