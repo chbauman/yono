@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Papa from "papaparse";
 import { useEffect, useState } from "react";
 
@@ -13,6 +14,42 @@ const parseDate = (dateStr: string) => {
 
 type EventList = { Wann: string; Wo: string; Was: string }[];
 type DateData = { past: EventList; future: EventList };
+
+export function parseMarkdownLinks(text: string) {
+  const parts = [];
+  let lastIndex = 0;
+  const regex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    const [_, linkText, url] = match;
+
+    // Push the text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+
+    // Push the actual Next.js Link component
+    parts.push(
+      <Link
+        key={match.index}
+        href={url}
+        className="text-blue-600 hover:underline"
+      >
+        {linkText}
+      </Link>
+    );
+
+    lastIndex = regex.lastIndex;
+  }
+
+  // Push remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts;
+}
 
 /**
  * Parse Google Sheet CSV into dictionary.
@@ -87,6 +124,9 @@ export const useAgenda = () => {
 };
 
 const EventList = ({ data }: { data: EventList }) => {
+  if (data.length == 0) {
+    return <p className="text-center">No upcoming gigs planned yet.</p>;
+  }
   return (
     <div className="overflow-x-auto">
       <table className="min-w-full border border-gray-300 dark:border-gray-600">
@@ -104,7 +144,7 @@ const EventList = ({ data }: { data: EventList }) => {
             <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800">
               {Object.entries(row).map((keyAndCell) => (
                 <td key={keyAndCell[0]} className="px-4 py-2 border">
-                  {keyAndCell[1]}
+                  {parseMarkdownLinks(keyAndCell[1])}
                 </td>
               ))}
             </tr>
