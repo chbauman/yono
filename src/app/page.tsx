@@ -55,7 +55,10 @@ export default function Home() {
                 <strong>Michael Strecke</strong> - Bariton Saxophon
               </li>
               <li>
-                <strong>Michael Iseli</strong> - Pauke
+                <strong>Max Berger</strong> - Posaune (nicht auf Bild)
+              </li>
+              <li>
+                <strong>Stefan Venetz</strong> - Pauke (nicht auf Bild)
               </li>
             </ul>
           </section>
