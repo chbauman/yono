@@ -37,7 +37,7 @@ export function parseMarkdownLinks(text: string) {
         className="text-blue-600 hover:underline"
       >
         {linkText}
-      </Link>
+      </Link>,
     );
 
     lastIndex = regex.lastIndex;
@@ -63,6 +63,9 @@ function parseCSV(text: string): DateData {
   }).data as unknown as EventList;
 
   const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  today.setDate(today.getDate() - 1); // Also keep yesterday's events in the future list
+
   const pastEvents: typeof events = [];
   const futureEvents: typeof events = [];
 
@@ -78,10 +81,10 @@ function parseCSV(text: string): DateData {
 
   // Sort each list by date ascending
   pastEvents.sort(
-    (a, b) => parseDate(b.Wann).getTime() - parseDate(a.Wann).getTime()
+    (a, b) => parseDate(b.Wann).getTime() - parseDate(a.Wann).getTime(),
   );
   futureEvents.sort(
-    (a, b) => parseDate(a.Wann).getTime() - parseDate(b.Wann).getTime()
+    (a, b) => parseDate(a.Wann).getTime() - parseDate(b.Wann).getTime(),
   );
 
   return { past: pastEvents, future: futureEvents };

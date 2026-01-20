@@ -9,11 +9,7 @@ export default function Home() {
   const [futureEvents, pastEvents] = useAgenda();
 
   const bandPhoto = (
-    <img
-      src="/band_photo.jpg"
-      alt="Band Besetzung"
-      className="mx-auto mb-6 w-108 md:w-148"
-    />
+    <img src="/band_photo.jpg" alt="Band Besetzung" className="mx-auto mb-6" />
   );
 
   return (
@@ -21,7 +17,7 @@ export default function Home() {
       <Cover />
       <main className="flex-grow">
         <div className="max-w-5xl mx-auto px-4">
-          <VideoEmbed youtubeId="SKNpbjA-w6k" />
+          <VideoEmbed youtubeId="NPwcvavqMbE" />
 
           <SectionHeading title="Agenda" />
           <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
@@ -33,17 +29,18 @@ export default function Home() {
           <section className="max-w-3xl mx-auto px-4 py-2 text-center">
             {bandPhoto}
             <p className="mb-6 text-gray-700 dark:text-gray-300 text-lg">
-              Die YONO Streetband besteht aus folgenden Musikern:
+              Die YONO Streetband besteht aus folgenden Musikern (von links nach
+              rechts):
             </p>
             <ul className="list-disc list-inside space-y-2 text-left max-w-md mx-auto text-gray-700 dark:text-gray-300">
+              <li>
+                <strong>Stefan Venetz</strong> - Pauke
+              </li>
               <li>
                 <strong>Lőrinc Màrton</strong> - Trompete
               </li>
               <li>
                 <strong>Christian Baumann</strong> - Trompete
-              </li>
-              <li>
-                <strong>Luciano Marinello</strong> - Sousaphon
               </li>
               <li>
                 <strong>Daniel Welter</strong> - Schlagzeug
@@ -52,13 +49,13 @@ export default function Home() {
                 <strong>Pim Bulle</strong> - Tenor Saxophon
               </li>
               <li>
+                <strong>Max Berger</strong> - Posaune
+              </li>
+              <li>
+                <strong>Luciano Marinello</strong> - Sousaphon
+              </li>
+              <li>
                 <strong>Michael Strecke</strong> - Bariton Saxophon
-              </li>
-              <li>
-                <strong>Max Berger</strong> - Posaune (nicht auf Bild)
-              </li>
-              <li>
-                <strong>Stefan Venetz</strong> - Pauke (nicht auf Bild)
               </li>
             </ul>
           </section>
