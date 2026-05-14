@@ -1,6 +1,6 @@
 "use client";
 
-import { FaYoutube, FaEnvelope } from "react-icons/fa";
+import { FaYoutube, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -21,6 +21,15 @@ export default function Footer() {
             className="hover:text-blue-500"
           >
             <FaEnvelope size={20} />
+          </a>
+          <a
+            href="https://www.instagram.com/yono_streetband/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hover:text-pink-500"
+          >
+            <FaInstagram size={20} />
           </a>
           <a
             href="https://youtube.com/@Yono-Streetband"
