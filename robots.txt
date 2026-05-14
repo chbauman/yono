@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yonostreetband.ch
+
+# Sitemaps
+Sitemap: https://yonostreetband.ch/sitemap.xml
