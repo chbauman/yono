@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FaYoutube, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
         <div>
           <p className="text-m">© {new Date().getFullYear()}</p>
         </div>
-        <img
+        <Image
           src="/logo_transparent.png"
           alt="YONO Streetband Logo"
           width={77}

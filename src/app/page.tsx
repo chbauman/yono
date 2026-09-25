@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Cover from "./cover";
 import Footer from "./footer";
 import { SectionHeading, VideoEmbed } from "./common";
@@ -25,7 +26,7 @@ export default async function Home() {
   }));
 
   const bandPhoto = (
-    <img
+    <Image
       src="/band_photo.jpg"
       alt="Die YONO Streetband am Zürichsee"
       width={1600}
