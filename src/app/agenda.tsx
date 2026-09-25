@@ -34,7 +34,7 @@ export function parseMarkdownLinks(text: string) {
       <Link
         key={match.index}
         href={url}
-        className="text-blue-600 hover:underline"
+        className="text-brand hover:text-brand-dark font-medium hover:underline"
       >
         {linkText}
       </Link>,
@@ -131,22 +131,31 @@ const EventList = ({ data }: { data: EventList }) => {
     return <p className="text-center">No upcoming gigs planned yet.</p>;
   }
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full border border-gray-300 dark:border-gray-600">
-        <thead className="bg-gray-100 dark:bg-gray-700">
-          <tr>
+    <div className="overflow-x-auto rounded-xl shadow-md ring-1 ring-gray-200 dark:ring-gray-700">
+      <table className="min-w-full border-separate border-spacing-0">
+        <thead>
+          <tr className="bg-brand">
             {Object.keys(data[0]).map((key) => (
-              <th key={key} className="px-4 py-2 border">
+              <th
+                key={key}
+                className="px-4 py-3 text-left font-heading font-semibold text-white first:rounded-tl-xl last:rounded-tr-xl"
+              >
                 {key}
               </th>
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody className="bg-white dark:bg-gray-900">
           {data.map((row, idx) => (
-            <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800">
+            <tr
+              key={idx}
+              className="odd:bg-gray-50 dark:odd:bg-gray-800/50 hover:bg-brand/10 dark:hover:bg-brand/20 transition-colors"
+            >
               {Object.entries(row).map((keyAndCell) => (
-                <td key={keyAndCell[0]} className="px-4 py-2 border">
+                <td
+                  key={keyAndCell[0]}
+                  className="px-4 py-3 border-t border-gray-200 dark:border-gray-700"
+                >
                   {parseMarkdownLinks(keyAndCell[1])}
                 </td>
               ))}

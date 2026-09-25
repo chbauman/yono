@@ -41,11 +41,12 @@ export const SectionHeading = ({
 }: SectionHeadingProps) => {
   return (
     <div className={`text-center my-8 ${className}`}>
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+      <h2 className="font-heading text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
         {title}
       </h2>
+      <div className="mx-auto mt-2 h-1 w-14 rounded-full bg-brand" />
       {subtitle && (
-        <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm md:text-base">
+        <p className="mt-3 text-gray-600 dark:text-gray-300 text-sm md:text-base">
           {subtitle}
         </p>
       )}

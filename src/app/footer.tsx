@@ -18,7 +18,7 @@ export default function Footer() {
           <a
             href="mailto:yonostreetband@gmail.com"
             aria-label="Email"
-            className="hover:text-blue-500"
+            className="hover:text-brand transition-colors"
           >
             <FaEnvelope size={20} />
           </a>
@@ -27,7 +27,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="hover:text-pink-500"
+            className="hover:text-brand transition-colors"
           >
             <FaInstagram size={20} />
           </a>
@@ -36,7 +36,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
-            className="hover:text-red-500"
+            className="hover:text-brand transition-colors"
           >
             <FaYoutube size={20} />
           </a>

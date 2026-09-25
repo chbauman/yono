@@ -9,7 +9,11 @@ export default function Home() {
   const [futureEvents, pastEvents] = useAgenda();
 
   const bandPhoto = (
-    <img src="/band_photo.jpg" alt="Band Besetzung" className="mx-auto mb-6" />
+    <img
+      src="/band_photo.jpg"
+      alt="Band Besetzung"
+      className="mx-auto mb-6 rounded-xl shadow-lg"
+    />
   );
 
   return (
@@ -34,25 +38,25 @@ export default function Home() {
             </p>
             <ul className="list-disc list-inside space-y-2 text-left max-w-md mx-auto text-gray-700 dark:text-gray-300">
               <li>
-                <strong>Stefan Venetz</strong> - Pauke
-              </li>
-              <li>
-                <strong>Lőrinc Màrton</strong> - Trompete
-              </li>
-              <li>
-                <strong>Christian Baumann</strong> - Trompete
+                <strong>Pim Bulle</strong> - Tenor Saxophon
               </li>
               <li>
                 <strong>Daniel Welter</strong> - Schlagzeug
               </li>
               <li>
-                <strong>Pim Bulle</strong> - Tenor Saxophon
+                <strong>Christian Baumann</strong> - Trompete
               </li>
               <li>
                 <strong>Max Berger</strong> - Posaune
               </li>
               <li>
+                <strong>Stefan Venetz</strong> - Pauke
+              </li>
+              <li>
                 <strong>Luciano Marinello</strong> - Sousaphon
+              </li>
+              <li>
+                <strong>Lőrinc Màrton</strong> - Trompete
               </li>
               <li>
                 <strong>Michael Strecke</strong> - Bariton Saxophon
@@ -73,7 +77,7 @@ export default function Home() {
             <a
               href="mailto:yonostreetband@gmail.com"
               aria-label="Email"
-              className="text-blue-600 hover:underline"
+              className="text-brand hover:text-brand-dark font-medium hover:underline"
             >
               yonostreetband@gmail.com
             </a>
@@ -97,7 +101,7 @@ export default function Home() {
             Bandbesetzung arrangiert. Zu einigen Stücken haben wir{" "}
             <a
               href="https://musescore.com/user/36900198/sets/5455133"
-              className="text-blue-600 hover:underline"
+              className="text-brand hover:text-brand-dark font-medium hover:underline"
             >
               die Noten auf MuseScore veröffentlicht.
             </a>{" "}

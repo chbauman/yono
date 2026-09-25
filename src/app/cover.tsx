@@ -18,7 +18,7 @@ export default function Cover() {
               alt="YONO Streetband Logo"
               className="w-32 md:w-80 xl:w-120 mb-3 mx-auto"
             />
-            <h1 className="sm:text-xl md:text-2xl xl:text-4xl font-bold drop-shadow">
+            <h1 className="font-heading sm:text-xl md:text-2xl xl:text-4xl font-bold drop-shadow">
               Die Strassenmusik Kleinformation aus Zürich
             </h1>
           </div>

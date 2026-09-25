@@ -16,7 +16,7 @@ export default function NotFound() {
           <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg text-center">
             <Link
               href="/"
-              className="text-blue-600 underline hover:text-blue-800"
+              className="text-brand underline hover:text-brand-dark"
             >
               Zurück zur Startseite
             </Link>
