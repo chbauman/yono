@@ -1,14 +1,22 @@
 import Image from "next/image";
-import Cover from "./cover";
-import Footer from "./footer";
-import { SectionHeading, VideoEmbed } from "./common";
-import { AgendaProvider, FutureEvents, PastEvents } from "./agenda";
-import { fetchAgenda, stripMarkdownLinks, toISODate } from "./agenda-data";
+import {
+  AgendaProvider,
+  Cover,
+  Footer,
+  FutureEvents,
+  PastEvents,
+  SectionHeading,
+  VideoEmbed,
+  fetchAgenda,
+  stripMarkdownLinks,
+  toISODate,
+} from "@emeki/band-site-kit";
+import { SHEET_ID, coverProps, footerProps } from "./site-config";
 
 export default async function Home() {
   // There is no 'use client' directive, so this is called only
   // once at build time!
-  const agenda = await fetchAgenda();
+  const agenda = await fetchAgenda(SHEET_ID);
 
   const eventsJsonLd = agenda.future.map((event) => ({
     "@context": "https://schema.org",
@@ -43,12 +51,12 @@ export default async function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(eventsJsonLd) }}
         />
       )}
-      <Cover />
+      <Cover {...coverProps} />
       <main className="flex-grow">
         <div className="max-w-5xl mx-auto px-4">
           <VideoEmbed youtubeId="NPwcvavqMbE" />
 
-          <AgendaProvider initialData={agenda}>
+          <AgendaProvider sheetId={SHEET_ID} initialData={agenda}>
             <SectionHeading title="Agenda" />
             <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
               Unsere nächsten Auftritte finden an folgenden Daten statt:
@@ -137,7 +145,7 @@ export default async function Home() {
           </p>
         </div>
       </main>
-      <Footer />
+      <Footer {...footerProps} />
     </div>
   );
 }

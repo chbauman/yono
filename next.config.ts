@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Static export (GitHub Pages) has no server to run Next's image
-  // optimizer at request time, so images are served as-is.
+  // GitHub Pages only serves static files.
+  output: "export",
+  // Static export has no server to run Next's image optimizer at request
+  // time, so images are served as-is.
   images: {
     unoptimized: true,
   },

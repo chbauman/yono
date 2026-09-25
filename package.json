@@ -12,18 +12,16 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@emeki/band-site-kit": "^0.1.1",
     "gh-pages": "^6.3.0",
     "next": "^16.3.6",
     "next-sitemap": "^4.2.3",
-    "papaparse": "^5.5.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^26.6.2",
-    "@types/papaparse": "^5.3.16",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9.39.5",

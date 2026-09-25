@@ -1,4 +1,7 @@
 @import "tailwindcss";
+/* Tailwind doesn't scan node_modules by default, so classes used only
+   inside the shared component package would otherwise never be generated. */
+@source "../../node_modules/@emeki/band-site-kit/dist";
 
 :root {
   --background: #ffffff;
