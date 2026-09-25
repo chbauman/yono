@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "Jazz",
   ],
   authors: [{ name: "YONO Streetband" }],
+  alternates: {
+    canonical: "https://yonostreetband.ch",
+  },
   openGraph: {
     title: "YONO Streetband – Strassenmusik aus Zürich",
     description:
@@ -41,7 +44,9 @@ export const metadata: Metadata = {
     locale: "de_CH",
     images: [
       {
-        url: "/band_photo.jpg",
+        url: "/og_image.jpg",
+        width: 1200,
+        height: 630,
         alt: "YONO Streetband",
       },
     ],
@@ -51,7 +56,7 @@ export const metadata: Metadata = {
     title: "YONO Streetband – Strassenmusik aus Zürich",
     description:
       "Die YONO Streetband ist eine Strassenmusik Kleinformation aus Zürich.",
-    images: ["/band_photo.jpg"],
+    images: ["/og_image.jpg"],
   },
   icons: {
     apple: "/apple-touch-icon.png",

@@ -11,8 +11,10 @@ export default function Footer() {
         </div>
         <img
           src="/logo_transparent.png"
-          alt="YONO"
-          style={{ height: "50px" }}
+          alt="YONO Streetband Logo"
+          width={77}
+          height={50}
+          style={{ height: "50px", width: "auto" }}
         />
         <div className="flex space-x-6">
           <a

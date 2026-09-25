@@ -1,74 +1,98 @@
-"use client";
-
 import Cover from "./cover";
 import Footer from "./footer";
 import { SectionHeading, VideoEmbed } from "./common";
-import { useAgenda } from "./agenda";
+import { AgendaProvider, FutureEvents, PastEvents } from "./agenda";
+import { fetchAgenda, stripMarkdownLinks, toISODate } from "./agenda-data";
 
-export default function Home() {
-  const [futureEvents, pastEvents] = useAgenda();
+export default async function Home() {
+  const agenda = await fetchAgenda();
+
+  const eventsJsonLd = agenda.future.map((event) => ({
+    "@context": "https://schema.org",
+    "@type": "MusicEvent",
+    name: stripMarkdownLinks(event.Was),
+    startDate: toISODate(event.Wann),
+    location: {
+      "@type": "Place",
+      name: stripMarkdownLinks(event.Wo),
+    },
+    performer: {
+      "@type": "MusicGroup",
+      name: "YONO Streetband",
+    },
+  }));
 
   const bandPhoto = (
     <img
       src="/band_photo.jpg"
-      alt="Band Besetzung"
+      alt="Die YONO Streetband am Zürichsee"
+      width={1600}
+      height={1200}
       className="mx-auto mb-6 rounded-xl shadow-lg"
     />
   );
 
   return (
     <div className="min-h-screen flex flex-col">
+      {eventsJsonLd.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventsJsonLd) }}
+        />
+      )}
       <Cover />
       <main className="flex-grow">
         <div className="max-w-5xl mx-auto px-4">
           <VideoEmbed youtubeId="NPwcvavqMbE" />
 
-          <SectionHeading title="Agenda" />
-          <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
-            Unsere nächsten Auftritte finden an folgenden Daten statt:
-          </p>
-          {futureEvents}
-
-          <SectionHeading title="Besetzung" />
-          <section className="max-w-3xl mx-auto px-4 py-2 text-center">
-            {bandPhoto}
-            <p className="mb-6 text-gray-700 dark:text-gray-300 text-lg">
-              Die YONO Streetband besteht aus folgenden Musikern (von links nach
-              rechts):
+          <AgendaProvider initialData={agenda}>
+            <SectionHeading title="Agenda" />
+            <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
+              Unsere nächsten Auftritte finden an folgenden Daten statt:
             </p>
-            <ul className="list-disc list-inside space-y-2 text-left max-w-md mx-auto text-gray-700 dark:text-gray-300">
-              <li>
-                <strong>Pim Bulle</strong> - Tenor Saxophon
-              </li>
-              <li>
-                <strong>Daniel Welter</strong> - Schlagzeug
-              </li>
-              <li>
-                <strong>Christian Baumann</strong> - Trompete
-              </li>
-              <li>
-                <strong>Max Berger</strong> - Posaune
-              </li>
-              <li>
-                <strong>Stefan Venetz</strong> - Pauke
-              </li>
-              <li>
-                <strong>Luciano Marinello</strong> - Sousaphon
-              </li>
-              <li>
-                <strong>Lőrinc Màrton</strong> - Trompete
-              </li>
-              <li>
-                <strong>Michael Strecke</strong> - Bariton Saxophon
-              </li>
-            </ul>
-          </section>
+            <FutureEvents />
 
-          <SectionHeading title="Vergangene Auftritte" />
-          <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
-            An folgenden Anlässen haben wir schon gespielt:
-          </p>
-          {pastEvents}
+            <SectionHeading title="Besetzung" />
+            <section className="max-w-3xl mx-auto px-4 py-2 text-center">
+              {bandPhoto}
+              <p className="mb-6 text-gray-700 dark:text-gray-300 text-lg">
+                Die YONO Streetband besteht aus folgenden Musikern (von links
+                nach rechts):
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-left max-w-md mx-auto text-gray-700 dark:text-gray-300">
+                <li>
+                  <strong>Pim Bulle</strong> - Tenor Saxophon
+                </li>
+                <li>
+                  <strong>Daniel Welter</strong> - Schlagzeug
+                </li>
+                <li>
+                  <strong>Christian Baumann</strong> - Trompete
+                </li>
+                <li>
+                  <strong>Max Berger</strong> - Posaune
+                </li>
+                <li>
+                  <strong>Stefan Venetz</strong> - Pauke
+                </li>
+                <li>
+                  <strong>Luciano Marinello</strong> - Sousaphon
+                </li>
+                <li>
+                  <strong>Lőrinc Màrton</strong> - Trompete
+                </li>
+                <li>
+                  <strong>Michael Strecke</strong> - Bariton Saxophon
+                </li>
+              </ul>
+            </section>
+
+            <SectionHeading title="Vergangene Auftritte" />
+            <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
+              An folgenden Anlässen haben wir schon gespielt:
+            </p>
+            <PastEvents />
+          </AgendaProvider>
 
           <SectionHeading title="Kontakt" />
           <p className="mb-6 text-gray-700 dark:text-gray-300 text-lg">
