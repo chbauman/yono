@@ -5,6 +5,8 @@ import { AgendaProvider, FutureEvents, PastEvents } from "./agenda";
 import { fetchAgenda, stripMarkdownLinks, toISODate } from "./agenda-data";
 
 export default async function Home() {
+  // There is no 'use client' directive, so this is called only
+  // once at build time!
   const agenda = await fetchAgenda();
 
   const eventsJsonLd = agenda.future.map((event) => ({
