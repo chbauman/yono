@@ -61,7 +61,10 @@ export default async function Home() {
             <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
               Unsere nächsten Auftritte finden an folgenden Daten statt:
             </p>
-            <FutureEvents />
+            <FutureEvents
+              surfaceClassName="bg-surface"
+              stripeClassName="odd:bg-surface-alt"
+            />
 
             <SectionHeading title="Besetzung" />
             <section className="max-w-3xl mx-auto px-4 py-2 text-center">
@@ -102,7 +105,10 @@ export default async function Home() {
             <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
               An folgenden Anlässen haben wir schon gespielt:
             </p>
-            <PastEvents />
+            <PastEvents
+              surfaceClassName="bg-surface"
+              stripeClassName="odd:bg-surface-alt"
+            />
           </AgendaProvider>
 
           <SectionHeading title="Kontakt" />

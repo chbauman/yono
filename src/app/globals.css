@@ -8,6 +8,12 @@
   --foreground: #171717;
   --brand: #e0541c;
   --brand-dark: #b8410f;
+  /* Footer/table-base background: a step off the page background — darker
+     in light mode, lighter in dark mode (set below). */
+  --surface: color-mix(in srgb, black 4%, var(--background));
+  /* A second, slightly stronger step for things that sit on top of
+     `--surface` (table row striping). */
+  --surface-alt: color-mix(in srgb, black 8%, var(--background));
 }
 
 @theme inline {
@@ -15,6 +21,8 @@
   --color-foreground: var(--foreground);
   --color-brand: var(--brand);
   --color-brand-dark: var(--brand-dark);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-poppins);
 }
@@ -25,6 +33,8 @@
     --foreground: #ededed;
     --brand: #f2854f;
     --brand-dark: #e0541c;
+    --surface: color-mix(in srgb, white 10%, var(--background));
+    --surface-alt: color-mix(in srgb, white 18%, var(--background));
   }
 }
 
