@@ -21,6 +21,7 @@ export const footerProps: ComponentProps<typeof Footer> = {
   copyrightName: "YONO Streetband",
   logoSrc: "/logo_transparent.png",
   logoAlt: "YONO Streetband Logo",
+  surfaceClassName: "bg-surface",
   links: [
     { type: "email", href: "mailto:yonostreetband@gmail.com" },
     {
